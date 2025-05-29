@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profit Path</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      overflow-x: scroll;
+      background-color: #d1c3d1;
+    }
+    .panel {
+      flex: 0 0 auto;
+      width: 300px;
+      height: 100vh;
+      background-color: #36004d;
+      color: white;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .light-panel {
+      background-color: #e0d3ed;
+      color: #36004d;
+    }
+    h1, h2 {
+      font-family: serif;
+    }
+    input, select, button, textarea {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      width: 90%;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    .notes-editor {
+      display: flex;
+      justify-content: space-between;
+      background-color: #36004d;
+      color: white;
+      padding: 5px 10px;
+    }
+    .pie-chart {
+      width: 100px;
+      height: 100px;
+      background: #36004d;
+      border-radius: 50%;
+      margin: 10px auto;
+    }
+    .footer-icons {
+      position: absolute;
+      bottom: 10px;
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <h1>Profit Path</h1>
+    <button>Log In</button>
+    <button>Sign In</button>
+  </div>
+
+  <div class="panel">
+    <h1>Log In</h1>
+    <input type="email" placeholder="Email" />
+    <input type="password" placeholder="Password" />
+    <button>Submit</button>
+  </div>
+
+  <div class="panel">
+    <h1>Sign In</h1>
+    <input type="email" placeholder="Email" />
+    <input type="password" placeholder="Password" />
+    <button>Submit</button>
+  </div>
+
+  <div class="panel light-panel">
+    <h2>Lessons</h2>
+    <div>What is Budgeting?<br /><progress value="100" max="100"></progress></div>
+    <div>Why is financial literacy important?<br /><progress value="100" max="100"></progress></div>
+    <div>What are taxes?<br /><progress value="100" max="100"></progress></div>
+    <div class="footer-icons">🧑‍🏫📄📊📁</div>
+  </div>
+
+  <div class="panel light-panel">
+    <h2>Notes</h2>
+    <div class="notes-editor">Tt <b>B</b> <i>I</i> <u>U</u></div>
+    <textarea rows="15"></textarea>
+    <div class="footer-icons">🧑‍🏫📄📊📁</div>
+  </div>
+
+  <div class="panel light-panel">
+    <h2>Portfolio</h2>
+    <input type="text" placeholder="$$" />
+    <select>
+      <option>Category</option>
+      <option>Utilities</option>
+      <option>Rent/Insurance</option>
+      <option>Needs</option>
+      <option>Wants</option>
+      <option>Education</option>
+    </select>
+    <button>Submit Entry</button>
+    <div class="footer-icons">🧑‍🏫📄📊📁</div>
+  </div>
+
+  <div class="panel light-panel">
+    <h2>Feedback</h2>
+    <strong>Model:</strong>
+    <div class="pie-chart"></div>
+    <p>Expenses 50% Savings 30%<br>Insurance 10% Retirement 10%</p>
+    <strong>You:</strong>
+    <div class="pie-chart"></div>
+    <p>Expenses 76% Savings 12%<br>Insurance 7% Retirement 5%</p>
+    <div class="footer-icons">🧑‍🏫📄📊📁</div>
+  </div>
+</body>
+</html>
